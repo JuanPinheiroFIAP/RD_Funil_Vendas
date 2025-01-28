@@ -8,6 +8,7 @@ import time
 load_dotenv()
 token_api = os.getenv('API_TOKEN')
 list_pipeline_id = {'Vendas': '65a529bba45153001041db69', 'Comparecimento': '65a19c4aeaa5d40011c85939', 'Pre': '6583259feec615001f1fd36f', 'Pos': '65a52caa08f3d90017ecf0c5'}
+
 async def extract_deals(dados):
     results = []
     for x in dados['deals']:
